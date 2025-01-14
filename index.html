@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7777</title>
+    <script>
+        function redirectToLink() {
+            const inputValue = document.getElementById("inputValue").value;
+            const correctAnswer = "42"
+            const nextLink = "https://ikecha.github.io/0002/"
+
+            if (inputValue === correctAnswer) {
+                window.location.href = nextLink;
+            } else {
+                alert("違う");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>問題に答えて</h1>
+    <p>U2FsdGVkX1/YUBNEPOrOHfcD0hz8q2aW0tVWBKjRF+I8Kr1r6wPwWUY0Oa9kwRrQSOpkWZqPd/x2W+kmRhO3GA==</p>
+    <p>ikecha.github.io/0000/</p>
+    <input type="text" id="inputValue" placeholder="答えを入力">
+    <button onclick="redirectToLink()">送信</button>
+</body>
+</html>
